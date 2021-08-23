@@ -16,5 +16,5 @@ mix
   .sass("resources/assets/sass/app.scss", "public/css")
   .sass("resources/assets/sass/responsive.scss", "public/css")
   .sourceMaps()
-  .browserSync("playground-laravel-ecommerce.dev")
+  .browserSync("laravel-ecommerce-example.test")
   .vue();
