@@ -12,4 +12,9 @@ class Product extends Model
     $amount = new \NumberFormatter('us_US', \NumberFormatter::CURRENCY);
     return $amount->format($this->price / 100);
   }
+
+  public function scopeMightAlsoLike($query)
+  {
+    return $query->inRandomOrder()->take(4);
+  }
 }
