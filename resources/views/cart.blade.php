@@ -110,8 +110,8 @@
             </div> <!-- end cart-totals -->
 
             <div class="cart-buttons">
-                <a href="#" class="button">Continue Shopping</a>
-                <a href="#" class="button-primary">Proceed to Checkout</a>
+                <a href="{{ route('shop.index') }}" class="button">Continue Shopping</a>
+                <a href="{{ route('checkout.index') }}" class="button-primary">Proceed to Checkout</a>
             </div>
 
             @else
@@ -155,15 +155,7 @@
                             <button type="submit" class="cart-options">Move to Cart</button>
                           </form>
                         </div>
-                        {{-- <div>
-                            <select class="quantity">
-                                <option selected="">1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div> --}}
+
                         <div>{{ $item->model->presentPrice() }}</div>
                     </div>
                 </div> <!-- end cart-table-row -->
